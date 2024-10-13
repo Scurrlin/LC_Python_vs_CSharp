@@ -5,7 +5,7 @@ public class Solution {
         }
 
         int[] s1Count = new int[26], s2Count = new int[26];
-        
+
         for (int i = 0; i < s1.Length; ++i) {
             s1Count[s1[i] - 'a']++;
             s2Count[s2[i] - 'a']++;
@@ -40,7 +40,9 @@ public class Solution {
             l++;
         }
 
-        return matches
+        return matches == 26;
+    }
+}
 
 // Runtime1:
 // Memory1:
