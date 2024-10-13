@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+
+public class Solution {
+    public int[][] Insert(int[][] intervals, int[] newInterval) {
+        List<int[]> res = new List<int[]>();
+
+        for (int i = 0; i < intervals.Length; ++i) {
+            if (newInterval[1] < intervals[i][0]) {
+                res.Add(newInterval);
+                res.AddRange(intervals[i..]);
+                return res.ToArray();
+            }
+            else if (newInterval[0] > intervals[i][1]) {
+                res.Add(intervals[i]);
+            }
+            else {
+                newInterval[0] = Math.Min(newInterval[0], intervals[i][0]);
+                newInterval[1] = Math.Max(newInterval[1], intervals[i][1]);
+            }
+        }
+
+        res.Add(newInterval);
+        return res.ToArray();
+    }
+}
+
+// Runtime1:
+// Memory1:
+
+// Runtime2:
+// Memory2:
+
+// Runtime3:
+// Memory3:
