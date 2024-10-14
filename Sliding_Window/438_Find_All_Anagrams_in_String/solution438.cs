@@ -54,11 +54,11 @@ public class Solution {
     }
 }
 
-// Runtime1:
-// Memory1:
+// Runtime1: 153ms, beats 24.61%
+// Memory1: 50.18MB, beats 53.89%
 
-// Runtime2:
-// Memory2:
+// Runtime2: 152ms, beats 24.92%
+// Memory2: 50.23MB, beats 42.68%
 
-// Runtime3:
-// Memory3:
+// Runtime3: 147ms, beats 26.17%
+// Memory3: 50.25MB, beats 42.68%
