@@ -30,13 +30,13 @@ public class Solution {
     }
 }
 
-// Runtime1:
-// Memory1:
+// Runtime1: 119ms, beats 86.15%
+// Memory1: 51.37MB, beats 79.97%
 
-// Runtime2:
-// Memory2:
+// Runtime2: 123ms, beats 76.21%
+// Memory2: 51.20MB, beats 88.95%
 
-// Runtime3:
-// Memory3:
+// Runtime3: 124ms, beats 72.43%
+// Memory3: 51.44MB, beats 60.85%
 
 // Runtime reduced by a factor of 10 to not skew data visualization
