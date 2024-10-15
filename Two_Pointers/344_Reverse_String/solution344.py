@@ -16,3 +16,4 @@ class Solution:
 # Memory3: 20.80MB, beats 34.11%
 
 # Runtime reduced by a factor of 10 to not skew data visualization
+# Memory reduced by a factor of 10 to not skew data visualization

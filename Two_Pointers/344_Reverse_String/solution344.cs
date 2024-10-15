@@ -21,3 +21,4 @@ public class Solution {
 // Memory3: 129.49MB, beats 25.13%
 
 // Runtime reduced by a factor of 10 to not skew data visualization
+// Memory reduced by a factor of 10 to not skew data visualization
