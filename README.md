@@ -2,9 +2,7 @@
 
 ## Premise
 
-It is well documented that C++ is faster than Python when it comes to raw processing speed… but what about C#? Is C# also faster than Python? Does it use less memory than Python? This repository serves as the second entry in details my expedition through various algorithmic challenges with both languages, as well as the surprising insights I found at journey’s end.
-
-Do note that since this is a didactic project with a focus on C++, the solutions in C++ contain additional lines of code not found in the Python solutions. These additional lines of code were not part of the submitted solutions.
+This repository serves as the second entry in my 3 part series comparing Python's LeetCode performance to that of C++, C#, and C. Since this is a didactic project with a focus on C# syntax, the solutions in C# contain additional lines of code not found in the Python solutions. These additional lines of code were not part of the submitted solutions.
 
 If you would like to skip to the comparative charts, [click here](#charts).
 
@@ -12,7 +10,7 @@ If you would like to skip to the comparative charts, [click here](#charts).
 
 To make the comparison concrete, I first selected 10 different algorithmic problem sets featured on LeetCode. From these sets, I chose 3 representative problems.
 
-For each problem, I developed a solution in Python and then translated that solution into C++ (with one exception that I'll touch on later). I aimed to keep the logic and structure as similar as possible between the two languages to allow for a fair comparison.
+For each problem, I developed a solution in Python and then translated that solution into C# (with one exception that I'll touch on later). I aimed to keep the logic and structure as similar as possible between the two languages to allow for a fair comparison.
 
 The exception case I mentioned earlier was LeetCode problem 912, which was part of the selections focusing on sorting algorithms. Given that there is a built-in method that can reduce an otherwise lengthy solution down to a couple lines of code in both languages, I felt both approaches merited inclusion.
 
@@ -22,7 +20,31 @@ Before getting to the results, I want to acknowledge that LeetCode is not the id
 
 ## Results
 
-Shocking absolutely no one, C++ outperformed Python in terms of speed in every algorithm. On average, C++ was 5.253 times faster than Python. You can view how much faster C++ was than Python in each algorithm below:
+I was very surprised to see how similar the runtimes were between the Python and C# solutions. What was even more unexpected was that the data clearly shows Python being **faster** on average than C#. I initially thought that perhaps my C# solutions were simply not in the same performance percentile as my Python solutions, but there is no meaningful discrepancy in that metric.
+
+For example, let's compare the solutions in both languages to problem 33 in the Searching algorithm set:
+
+<details>
+<summary>LC 33 Comparison</summary>
+
+* Python:
+<br>
+
+- Runtime1: 43ms, beats 57.45%
+- Runtime2: 37ms, beats 89.99%
+- Runtime3: 42ms, beats 67.07%
+<br>
+
+* C#:
+<br>
+
+- Runtime1: 59ms, beats 82.78%
+- Runtime2: 59ms, beats 82.78%
+- Runtime3: 53ms, beats 96.23%
+
+</details>
+
+As you can see, the runtimes for C# scored significantly higher than those of Python relatively speaking. However, even the runtime that beat over 96% of other C# solutions was still slower than the Python solution that only beat 57% 
 
 <details>
 <summary>Runtime Comparison</summary>
@@ -40,7 +62,7 @@ Shocking absolutely no one, C++ outperformed Python in terms of speed in every a
 <br>
 
 * Python average runtime – 62.945ms
-* C++ average runtime – 67.388ms
+* C# average runtime – 67.388ms
 <br>
 
 * Overall average – Python was 1.071x (7.1%) faster
@@ -65,7 +87,7 @@ On the other hand, the memory usage results were actually quite surprising. On a
 <br>
 
 * Python average memory usage – 19.39MB
-* C++ average memory usage – 48.76MB
+* C# average memory usage – 48.76MB
 <br>
 
 * Overall average – Python used 29.37 fewer MB
