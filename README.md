@@ -48,13 +48,19 @@ C#:
 - Runtime3: 53ms, beats 96.23%
 <br>
 
-- Memory1: 16.83MB, beats 72.42%
-- Memory2: 16.88MB, beats 73.04%
+- Memory1: 16.83MB, beats 73.04%
+- Memory2: 16.88MB, beats 72.42%
 - Memory3: 16.95MB, beats 33.05%
 
 </details>
 
-As you can see, the runtimes for C# scored significantly higher than those of Python relatively speaking. However, even the runtime that beat over 96% of other C# solutions was still slower than the Python solution that only beat 57% 
+As you can see, the runtimes for C# scored significantly higher than those of Python relatively speaking. However, even the runtime that beat over 96% of other C# solutions was still 10ms slower than the Python solution that only beat 57% of other Python solutions.
+
+The memory usage for this problem tells a simliar story. Even though the C# solutions scored lower in their performance percentile, the solution that beat 11% of other C# solutions used only 0.36MB more memory than the solution that beat 56%. This suggests that there is not much deviation across the entire range of memory usage for this problem's C# solutions.
+
+Additonally, the Python solution that beat 33% of other Python solutions in memory usage used only 0.12MB more than the solution that beat 73%. This confirms that there is not much deviation across the entire range of memory usage for this problem's Python solutions either.
+
+Based on the above insights, I would say to take the runtime and memory comparisons below with a fairly large grain of salt.
 
 <details>
 <summary>Runtime Comparison</summary>
@@ -78,8 +84,6 @@ As you can see, the runtimes for C# scored significantly higher than those of Py
 * Overall average – Python was 1.071x (7.1%) faster
 
 </details>
-
-On the other hand, the memory usage results were actually quite surprising. On average, Python used 4.509 fewer MB than C++. In fact, Python used significantly less memory (>10MB) than C++ in 4 out of the 10 algorithmic comparisons. This finding challenges the common perception that Python is always the more resource-intensive option.
 
 <details>
 <summary>Memory Comparison</summary>
