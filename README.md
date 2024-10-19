@@ -27,6 +27,7 @@ For example, let's compare the solutions in both languages to problem 33 in the 
 <details>
 <summary>LC 33 Comparison</summary>
 <br>
+
 Python:
 <br>
 
