@@ -64,7 +64,7 @@ Based on the above insights, I would say to take the runtime and memory comparis
 
 <details>
 <summary>Runtime Comparison</summary>
-
+<br>
 * Backtracking - Python was 2.682x faster
 * Divide & Conquer - C# was 1.267x faster
 * Dynamic Programming - C# was 2.723x faster
@@ -87,7 +87,7 @@ Based on the above insights, I would say to take the runtime and memory comparis
 
 <details>
 <summary>Memory Comparison</summary>
-
+<br>
 * Backtracking – Python used 30.018 fewer MB
 * Divide & Conquer – Python used 34.689 fewer MB
 * Dynamic Programming – Python used 19.869 fewer MB
