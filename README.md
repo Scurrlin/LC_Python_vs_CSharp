@@ -27,7 +27,7 @@ For example, let's compare the solutions in both languages to problem 33 in the 
 <details>
 <summary>LC 33 Comparison</summary>
 
-* Python:
+Python:
 <br>
 
 - Runtime1: 43ms, beats 57.45%
@@ -40,7 +40,7 @@ For example, let's compare the solutions in both languages to problem 33 in the 
 - Memory3: 41.76MB, beats 11.19%
 <br>
 
-* C#:
+C#:
 <br>
 
 - Runtime1: 59ms, beats 82.78%
