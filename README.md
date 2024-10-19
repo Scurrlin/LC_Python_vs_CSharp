@@ -2,7 +2,7 @@
 
 ## Premise
 
-It is well documented that C++ is faster than Python when it comes to raw processing speed… but just how much faster is it? Does it also use less memory than Python? As someone who hasn’t coded in C++ before, I wanted to find the answers to these questions while simultaneously familiarizing myself with the syntax of C++. This repository details my expedition through various algorithmic challenges with both languages, as well as the surprising insights I found at journey’s end.
+It is well documented that C++ is faster than Python when it comes to raw processing speed… but what about C#? Is C# also faster than Python? Does it use less memory than Python? This repository serves as the second entry in details my expedition through various algorithmic challenges with both languages, as well as the surprising insights I found at journey’s end.
 
 Do note that since this is a didactic project with a focus on C++, the solutions in C++ contain additional lines of code not found in the Python solutions. These additional lines of code were not part of the submitted solutions.
 
@@ -27,23 +27,23 @@ Shocking absolutely no one, C++ outperformed Python in terms of speed in every a
 <details>
 <summary>Runtime Comparison</summary>
 
-* Backtracking - 36x faster
-* Divide & Conquer - 2.221x faster
-* Dynamic Programming - 28.781x faster
-* Graphs - 18.423x faster
-* Greedy - 3.837x faster
-* Searching - 11.804x faster
-* Sliding Window - 3.068x faster
-* Sorting - 5.092x faster
-* Trees - 8.999x faster
-* Two Pointers - 9.307x faster
+* Backtracking - Python was 2.682x faster
+* Divide & Conquer - C# was 1.267x faster
+* Dynamic Programming - C# was 2.723x faster
+* Graphs - Python was 1.427x faster
+* Greedy - C# was 1.023x faster
+* Searching - C# was 1.265x faster
+* Sliding Window - Python was 1.348x faster
+* Sorting - C# was 1.019x faster
+* Trees - Python was 2.871x faster
+* Two Pointers - C# was 2.142x faster
 <br>
 
-* Python average runtime – 72.082ms
-* C++ average runtime – 13.721ms
+* Python average runtime – 62.945ms
+* C++ average runtime – 67.388ms
 <br>
 
-* Overall average – C++ was 5.253x faster
+* Overall average – Python was 1.071x (7.1%) faster
 
 </details>
 
@@ -52,23 +52,23 @@ On the other hand, the memory usage results were actually quite surprising. On a
 <details>
 <summary>Memory Comparison</summary>
 
-* Backtracking – C++ used 5.716 fewer MB
-* Divide & Conquer – Python used 14.417 fewer MB
-* Dynamic Programming – C++ used 6.579 fewer MB
-* Graphs – C++ used 1.161 fewer MB
-* Greedy – Python used 20.859 fewer MB
-* Searching – Python used 0.112 fewer MB
-* Sliding Window – C++ used 4.131 fewer MB
-* Sorting – Python used 15.538 fewer MB
-* Trees – C++ used 3.183 fewer MB
-* Two Pointers – Python used 14.934 fewer MB
+* Backtracking – Python used 30.018 fewer MB
+* Divide & Conquer – Python used 34.689 fewer MB
+* Dynamic Programming – Python used 19.869 fewer MB
+* Graphs – Python used 29.987 fewer MB
+* Greedy – Python used 32.633 fewer MB
+* Searching – Python used 22.837 fewer MB
+* Sliding Window – Python used 27.817 fewer MB
+* Sorting – Python used 35.309 fewer MB
+* Trees – Python used 28.071 fewer MB
+* Two Pointers – Python used 32.475 fewer MB
 <br>
 
-* Python average memory usage – 20.015MB
-* C++ average memory usage – 24.524MB
+* Python average memory usage – 19.39MB
+* C++ average memory usage – 48.76MB
 <br>
 
-* Overall average – Python used 4.509 fewer MB
+* Overall average – Python used 29.37 fewer MB
 
 </details>
 
