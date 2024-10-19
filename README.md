@@ -35,12 +35,22 @@ For example, let's compare the solutions in both languages to problem 33 in the 
 - Runtime3: 42ms, beats 67.07%
 <br>
 
+- Memory1: 41.32MB, beats 56.41%
+- Memory2: 41.40MB, beats 56.41%
+- Memory3: 41.76MB, beats 11.19%
+<br>
+
 * C#:
 <br>
 
 - Runtime1: 59ms, beats 82.78%
 - Runtime2: 59ms, beats 82.78%
 - Runtime3: 53ms, beats 96.23%
+<br>
+
+- Memory1: 16.83MB, beats 72.42%
+- Memory2: 16.88MB, beats 73.04%
+- Memory3: 16.95MB, beats 33.05%
 
 </details>
 
