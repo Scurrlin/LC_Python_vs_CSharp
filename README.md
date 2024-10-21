@@ -61,8 +61,6 @@ The memory usage for this problem tells a simliar story. Even though the C# solu
 
 Additonally, the Python solution that beat 33% of other Python solutions in memory usage used only 0.12MB more than the solution that beat 73%. This confirms that there is not much deviation across the entire range of memory usage for this problem's Python solutions either.
 
-Based on the insights mentioned above, I would suggest taking the runtime and memory comparisons below with a fairly large grain of salt.
-
 <details>
 <summary>Runtime Comparison</summary>
 <br>
