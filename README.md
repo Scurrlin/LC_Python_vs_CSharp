@@ -1,6 +1,6 @@
 # Analyzing Python and C# Performance in LeetCode Problems
 
-![Python vs C#](Python_vs_C#.png)
+![Python vs C#](Python_vs_CSharp.png)
 
 ## Premise
 
