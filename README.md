@@ -1,5 +1,7 @@
 # Analyzing Python and C# Performance in LeetCode Problems
 
+![Python vs C#](Python_vs_C#.png)
+
 ## Premise
 
 This repository serves as the second entry in my 3 part series comparing Python's LeetCode performance to that of C++, C#, and C. Since this is a didactic project with a focus on C# syntax, the solutions in C# contain additional lines of code not found in the Python solutions. These additional lines of code were not part of the submitted solutions.
