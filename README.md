@@ -22,6 +22,8 @@ Before getting to the results, I want to acknowledge that LeetCode is not the id
 
 ## Results
 
+![Movies](Movies.png)
+
 I was very surprised to see how similar the runtimes were between the Python and C# solutions. What was even more unexpected was that the data clearly shows Python being **faster** on average than C#. I initially thought that perhaps my C# solutions were simply not in the same performance percentile as my Python solutions, but there is no meaningful discrepancy in that metric.
 
 For example, let's compare the solutions in both languages to problem 33 in the Searching algorithm set:
