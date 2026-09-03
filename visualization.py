@@ -23,7 +23,7 @@ def create_bar_graph(x, y1, y2, labels, title, y_label, filename, note, y_ticks,
     index = range(len(x))
     
     plt.bar(index, y1, bar_width, label='Python', color='#3572A5')
-    plt.bar([i + bar_width for i in index], y2, bar_width, label='C#', color='#178600')
+    plt.bar([i + bar_width for i in index], y2, bar_width, label='C#', color='#7355dd')
 
     plt.xlabel(labels['x_label'])
     plt.ylabel(y_label)
