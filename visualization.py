@@ -17,29 +17,34 @@ memory_data = pd.read_excel(
 )
 
 def create_bar_graph(x, y1, y2, labels, title, y_label, filename, note, y_ticks, include_note):
-    plt.figure(figsize=(14, 8))
+    fig = plt.figure(figsize=(14, 8), facecolor='black')
+    ax = fig.add_subplot(111)
+    ax.set_facecolor('black')
     
     bar_width = 0.35
     index = range(len(x))
     
-    plt.bar(index, y1, bar_width, label='Python', color='#3572A5')
-    plt.bar([i + bar_width for i in index], y2, bar_width, label='C#', color='#7355dd')
+    ax.bar(index, y1, bar_width, label='Python', color='#FFD43B')
+    ax.bar([i + bar_width for i in index], y2, bar_width, label='C#', color='#7355dd')
 
-    plt.xlabel(labels['x_label'])
-    plt.ylabel(y_label)
-    plt.title(title)
-    plt.xticks([i + bar_width / 2 for i in index], x, rotation=45, ha="right")
-    plt.yticks(y_ticks)
-    plt.legend(loc='upper right')
+    ax.set_xlabel(labels['x_label'], color='white')
+    ax.set_ylabel(y_label, color='white')
+    ax.set_title(title, color='white')
+    ax.set_xticks([i + bar_width / 2 for i in index], x, rotation=45, ha="right")
+    ax.set_yticks(y_ticks)
+    ax.tick_params(colors='white')
+    ax.legend(loc='upper right', facecolor='black', edgecolor='white', labelcolor='white')
     
-    plt.grid(axis='both', linestyle='--', linewidth=0.5, color='gray', alpha=0.7)
+    ax.grid(axis='both', linestyle='--', linewidth=0.5, color='#C8C8C8', alpha=0.45)
+    for spine in ax.spines.values():
+        spine.set_color('white')
 
-    plt.tight_layout(rect=[0, 0.05, 1, 1])
+    fig.tight_layout(rect=[0, 0.05, 1, 1])
     if include_note:
-        plt.figtext(0.5, 0.01, note, wrap=True, horizontalalignment='center', fontsize=8)
+        fig.text(0.5, 0.01, note, wrap=True, horizontalalignment='center', fontsize=8, color='white')
     
-    plt.savefig(filename)
-    plt.close()
+    fig.savefig(filename, facecolor=fig.get_facecolor())
+    plt.close(fig)
 
 problems = [39, 46, 78, '53*', 169, '240*', 70, 198, '300*', '200*', 733, 994, '55*', 406, '452*', 33, 374, 704, 3, 438, 567, 56, 57, '912A*', '912B*', 94, 144, 230, '11*', '15*', '344*']
 python_runtime_values = [runtime_data.iat[i, 5] for i in range(3, 64, 2)]
