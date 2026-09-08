@@ -37,8 +37,8 @@ def create_bar_graph(x, y1, y2, labels, title, y_label, filename, note, y_ticks,
     while full_y_ticks[-1] <= max_bar_value:
         full_y_ticks.append(full_y_ticks[-1] + y_tick_interval)
     
-    ax.bar(index, y1, bar_width, label='Python', color='#FFD43B')
-    ax.bar([i + bar_width for i in index], y2, bar_width, label='C#', color='#7355dd')
+    ax.bar(index, y1, bar_width, label='Python', color='#FFD43B', alpha=1.0, zorder=2)
+    ax.bar([i + bar_width for i in index], y2, bar_width, label='C#', color='#7355dd', alpha=1.0, zorder=2)
 
     ax.set_xlabel(labels['x_label'], color='white')
     ax.set_ylabel(y_label, color='white')
@@ -50,21 +50,18 @@ def create_bar_graph(x, y1, y2, labels, title, y_label, filename, note, y_ticks,
     ax.tick_params(colors='white')
     ax.legend(loc='upper right', facecolor='black', edgecolor='white', labelcolor='white')
     
-    # Use one opaque 2 px stroke for every grid line.
-    grid_style = dict(
+    # Keep every grid line at one opacity and behind the opaque bars.
+    ax.set_axisbelow(True)
+    ax.grid(
+        axis='both',
         color='#787878',
         linestyle=(0, (3, 2)),
         linewidth=1.44,
         alpha=1.0,
         antialiased=True,
         snap=True,
-        dash_capstyle='butt',
-        zorder=3
+        dash_capstyle='butt'
     )
-    for x_tick in x_ticks:
-        ax.axvline(x_tick, ymin=0, ymax=1, **grid_style)
-    for y_tick in full_y_ticks[1:-1]:
-        ax.axhline(y_tick, xmin=0, xmax=1, **grid_style)
 
     for spine in ax.spines.values():
         spine.set_color('white')
